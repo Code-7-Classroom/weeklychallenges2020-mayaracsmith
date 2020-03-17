@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    position: relative;
+    display: block;
+    width: 384px;
+    height: 384px;
+    border: 2px solid black;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.box__container--white, .box__container--black {
+    width:48px;
+	height:48px;
+	float:left;
+}
+
+.box__container--white {
+    background-color: white;
+}
+
+.box__container--black {
+    background-color: black;
+}
