@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="products.css">
+    <title>All Products</title>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
+        <!-- Nav -->
+        <nav class="main-nav">
+            <img src="/img/logo.jpeg" alt="logo" class="logo">
+            <a href="index.html"><h1>Caldeira's Cakes</h1></a>
+
+            <ul class="main-menu">
+                <li><a href="products.html">Shop All</a></li>
+                <li><a href="#">Birthday</a></li>
+                <li><a href="#">Wedding</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+
+              <ul class="right-menu">
+                <li>
+                  <input type="text" placeholder="Search..">
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                  </a>
+                </li>
+              </ul>
+        </nav>
+
+    <!-- Filter -->
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cakes')"> Cakes</button>
+                <button class="btn" onclick="filterSelection('cupcake')"> CupCakes</button>
+                <button class="btn" onclick="filterSelection('cookies')"> Cookies</button>
+                <button class="btn" onclick="filterSelection('20')"> $0 - $20</button>
+                <button class="btn" onclick="filterSelection('50')"> $20 - $50</button>
+                <button class="btn" onclick="filterSelection('100')"> $50 - $100</button>
+                <button class="btn" onclick="filterSelection('200')"> $100 - $200</button>
+              </div>
+
+     <!-- Products -->
+     <section class="products">
+        <div class="filterDiv cupcake 20">
+            <img src="/img/all.jpeg" alt="CupCake" />
+            <h3>Strawberry Cupcakes - $18</h3>
+            <p>
+                Set of 4 Strawberry CupCakes for $18
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="filterDiv cakes 100">
+            <img src="/img/bday.jpeg" alt="Birthday Cake">
+            <h3>Cake - $80</h3>
+            <p>
+                Personalized cake for $80
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="filterDiv cakes 200">
+            <img src="/img/weddingP.jpeg" alt="Wedding Cake" />
+            <h3>Cake - $180</h3>
+            <p>
+                Personalized cake for $180
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="filterDiv cakes 50">
+            <img src="/img/smash.png" alt="Smash the Cake" />
+            <h3>Cake - $30</h3>
+            <p>
+                Personalized cakes for $30
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <div class="filterDiv cupcake 20">
+            <img src="/img/cupcakeP.jpeg" alt="CupCake - Shop All" />
+            <h3>Vanilla CupCakes - $15</h3>
+            <p>
+                Set of 4 Vanilla CupCakes for $15
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="filterDiv cakes 200">
+            <img src="/img/bday1.png" alt="Birthday Cake">
+            <h3>Cake - $140</h3>
+            <p>
+                Personalized cake for $140
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="filterDiv cakes 200">
+            <img src="/img/weddingPr.jpeg" alt="Wedding Cake" />
+            <h3>Cake - $200</h3>
+            <p>
+                Personalized cake for $200
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="filterDiv cakes 50">
+            <img src="/img/sc.png" alt="Smash the Cake" />
+            <h3>Cake - $25</h3>
+            <p>
+                Personalized cake for $25
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <div class="filterDiv cookies 20">
+            <img src="/img/cookies2.jpeg" alt="CupCake - Shop All" />
+            <h3>Cookies - $12</h3>
+            <p>
+                Set of 6 chocolate chip cookies for $12
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="filterDiv cakes 100">
+            <img src="/img/bday2.png" alt="Birthday Cake">
+            <h3>Cake - $90</h3>
+            <p>
+                Personalized cake for $90
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="filterDiv cookies 20">
+            <img src="/img/cookie.jpeg" alt="Wedding Cake" />
+            <h3>Seasonal Cookies - $12</h3>
+            <p>
+                Set of 6 seasonal cookies for $12
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="filterDiv cakes 100">
+            <img src="/img/bday3.png" alt="Birthday Cake" />
+            <h3>Cake - $60</h3>
+            <p>
+                Personalized cake for $60
+            </p>
+            <a href="#">add to cart <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+    </div>
+
+    <!-- Links Footer -->
+    <section class="links">
+        <div class="links--inner">
+          <ul>
+            <li><h3>Our Products</h3></li>
+            <li><a href="#">Cakes</a></li>
+            <li><a href="#">Cupcakes</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Chocolate Covered Fruits</a></li>
+            <li><a href="products.html">View All Products</a></li>
+          </ul>
+          <ul>
+            <li><h3>Special Events</h3></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">Wedding</a></li>
+            <li><a href="#">Smash the Cake</a></li>
+            <li><a href="#">Anniversary</a></li>
+            <li><a href="#">View All Occasions</a></li>
+          </ul>
+          <ul>
+            <li><h3>Costumer Service</h3></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Allergy & Safety Information</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Our Stores</a></li>
+          </ul>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+          <div><i class="fas fa-globe fa-2x"></i><a href="#"> English (United States)</a></div>
+          <div>
+            <a class="social-icon" href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-icon divider" href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a class="social-icon" href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <ul>
+            <li>&copy; Caldeira's Cakes 2020</li>
+          </ul>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/bf27831d72.js" crossorigin="anonymous"></script>
+    <script>
+    document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+    
+    filterSelection("all")
+
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+// Show filtered elements
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+// Hide elements that are not selected
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    
+    </script>
+</body>
+</html>

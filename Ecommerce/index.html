@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Caldeira's Cakes</title>
+</head>
+<body>
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+    <div class="container">
+        <!-- Nav -->
+        <nav class="main-nav">
+            <img src="/img/logo.jpeg" alt="logo" class="logo">
+            <a href="index.html"><h1>Caldeira's Cakes</h1></a>
+
+            <ul class="main-menu">
+                <li><a href="products.html">Shop All</a></li>
+                <li><a href="#">Birthday</a></li>
+                <li><a href="#">Wedding</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+
+              <ul class="right-menu">
+                <li>
+                  <input type="text" placeholder="Search..">
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                  </a>
+                </li>
+              </ul>
+        </nav>
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="/img/smashcake.jpeg" alt="baby eating cake" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="/img/bdaycake.jpeg" alt="birthday cake" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="/img/cookies.jpeg" alt="cookies" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+            
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+        <!-- Products Grid -->
+        <section class="products">
+            <div>
+                <img src="/img/all.jpeg" alt="CupCake - Shop All" />
+                <h3>Shop All</h3>
+                <p>
+                    Make every occasion sweeter.
+                </p>
+                <a href="products.html">Shop All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div>
+                <img src="/img/bday.jpeg" alt="Birthday Cake">
+                <h3>Birthday Cakes</h3>
+                <p>
+                    Personalized birthday cakes available. Make their birthday this year extra special with a gift 
+                    made of their favorite flavor.
+                </p>
+                <a href="#">Shop Birthday Cakes <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div>
+                <img src="/img/wedd.jpeg" alt="Wedding Cake" />
+                <h3>Wedding Cakes</h3>
+                <p>
+                    Our wedding cakes include traditional southern pound cake recipes and use the finest ingredients.
+                </p>
+                <a href="#">Shop Wedding Cakes <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div>
+                <img src="/img/smash.png" alt="Smash the Cake" />
+                <h3>Smash the Cake!</h3>
+                <p>
+                    Small frosted cakes made just for the birthday guest of honor. 
+                    Give it to your kid to dig into it with their hands. 
+                    It gets messy, but the photos are priceless.
+                </p>
+                <a href="#">Shop Smash the Cake! <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div>
+                <img src="/img/cookies2.jpeg" alt="Cookies" />
+                <h3>Cookies</h3>
+                <p>
+                    Our Cookies are baked fresh daily with premium ingredients and a little bit of love.
+                </p>
+                <a href="#">Shop Cookies <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Links Footer -->
+    <section class="links">
+        <div class="links--inner">
+          <ul>
+            <li><h3>Our Products</h3></li>
+            <li><a href="#">Cakes</a></li>
+            <li><a href="#">Cupcakes</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Chocolate Covered Fruits</a></li>
+            <li><a href="products.html">View All Products</a></li>
+          </ul>
+          <ul>
+            <li><h3>Special Events</h3></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">Wedding</a></li>
+            <li><a href="#">Smash the Cake</a></li>
+            <li><a href="#">Anniversary</a></li>
+            <li><a href="#">View All Occasions</a></li>
+          </ul>
+          <ul>
+            <li><h3>Costumer Service</h3></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Allergy & Safety Information</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Our Stores</a></li>
+          </ul>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+          <div><i class="fas fa-globe fa-2x"></i><a href="#"> English (United States)</a></div>
+          <div>
+            <a class="social-icon" href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-icon divider" href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a class="social-icon" href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <ul>
+            <li>&copy; Caldeira's Cakes 2020</li>
+          </ul>
+        </div>
+    </footer>
+
+
+
+
+        <script src="https://kit.fontawesome.com/bf27831d72.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</body>
+</html>
