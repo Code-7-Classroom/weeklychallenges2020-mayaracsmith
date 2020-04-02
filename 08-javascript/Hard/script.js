@@ -7,3 +7,12 @@
 // You can use 'getName' or other get methods to access data that people might need. 
 // For example, people addressing a package or email may need a customer's name, but they definitely shouldn't have access to their ssn.
 
+function getName(){
+    var Pii = {
+        name: "Rosemary",
+        ssn: 746253985
+    }
+    return Pii.name
+}
+
+
