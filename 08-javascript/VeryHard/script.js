@@ -16,3 +16,75 @@
 // Bonus - ES6 Syntax: Use ES6 Syntax in your answer. Feel free to add on new methods or properties to  incorporate the syntax.
 // function Person(name, job, age) { }
 // function Programmer(name, job, age, languages) { }
+
+// 1
+function Person(name, job, age, exercises) {
+    this.name = name;
+    this.job = job;
+    this.age = age;
+    this.exercise = exercise(exercises)
+}
+
+var antonio = new Person("Antonio", "dancer", 28, "hopscotch");
+
+console.log(antonio.name);
+
+// 2
+function exercise (exercises) {
+    return function () {
+      return exercises + " is fun! - said no one ever"
+    };
+};
+console.log(antonio.exercise());
+
+// 3
+ function fetchJob () {
+    return function () {
+      return this.name + " is a " + this.job
+    };
+};
+console.log(fetchJob());
+
+//4
+function Programmer(name, job, age, languages) {
+    Person.call(this, name, job, age);
+    this.language = [languages];
+    this.busy = true;
+}
+
+//5
+Programmer.antonio.completeTask = function() {
+    this.busy = false;
+}
+Programmer.antonio.acceptNewTask = function() {
+    this.busy = true;
+}
+
+//6
+Programmer.antonio.offerNewTask = function() {
+    if (this.busy) {
+        console.log(this.name +' can\'t accept any new tasks right now.');
+    } else {
+        console.log(this.name +' would love to take on a new responsibility.')
+
+    }
+}
+
+//7
+Programmer.antonio.listLanguage = function() {
+  console.log(this.language);
+}
+
+Programmer.antonio.learnLanguage= function(program){
+    return this.language.push(program);
+}
+
+//8
+var maria = new Person("Maria", "cook", 25, "jumping jacks");
+console.log(maria.fetchJob());
+var me = new Person("Maya", "Coding Student", 21, "swimming", "portuguese");
+console.log(me);
+me.listLanguage();
+me.learnLanguage();
+me.listLanguage();
+me.offerNewTask();
