@@ -12,10 +12,10 @@
 
 let me = {
     name: 'Mayara Caldeira',
-    sayHi: function() {
-       return 'hello, my name is ' + this.name;
+    sayHi: () => {
+       return 'hello, my name is ' + me.name;
     }
 };
 
 console.log(me.name);
-console.log(me.sayHi);
+console.log(sayHi());
